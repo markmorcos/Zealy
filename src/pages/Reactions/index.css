@@ -1,0 +1,89 @@
+* {
+  transition: all 0.4s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.reaction {
+  width: 300px;
+}
+
+.reaction-bubble {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background: white;
+}
+
+.reaction h4 {
+  border: 1px solid white;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment input,
+.comment button {
+  margin-top: 10px;
+}
+
+.comments {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.draft {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  z-index: 100;
+}
+
+.draft button {
+  margin-top: 10px;
+}
+
+.reaction :not(.hidden) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.reaction .hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+input {
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 10px;
+}
+
+button {
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
